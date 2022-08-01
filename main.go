@@ -161,15 +161,15 @@ func FindTrains(depStation, arrStation, criteria string) (Trains, error) {
 func scanInput() (departureStation, arrivalStation, criteria string) {
 	scanner := bufio.NewScanner(os.Stdin)
 
-	fmt.Println("введіть станцію відправлення: (натисніть Enter після вводу)")
+	fmt.Println("введіть станцію відправлення: (натисніть Enter після вводу) ")
 	scanner.Scan()
 	departureStation = scanner.Text()
 
-	fmt.Println("введіть станцію прибуття: (натисніть Enter після вводу)")
+	fmt.Println("введіть станцію прибуття: (натисніть Enter після вводу) ")
 	scanner.Scan()
 	arrivalStation = scanner.Text()
 
-	fmt.Println("введіть критерій, по якому сортувати результат: (натисніть Enter після вводу)")
+	fmt.Println("введіть критерій, по якому сортувати результат: (натисніть Enter після вводу) ")
 	scanner.Scan()
 	criteria = scanner.Text()
 
